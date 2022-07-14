@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  user-select: none;
+}
+
+/*TITLE*/
+
+.title {
+  background: url(../img/title_bg.png);
+  height: 812px;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.menu {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 66px auto auto 110px;
+  cursor: pointer;
+}
+.plant {
+  width: 507px;
+  height: 694px;
+  float: right;
+  margin: 66px 110px auto auto;
+  z-index: 1;
+}
+
+/*POTTED PLANT*/
+
+.potted_plant {
+  background: url(../img/bg_plant.png);
+  height: 896px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container_potted {
+  width: 1152px;
+  display: flex;
+}
+.social_potted {
+  display: flex;
+  margin: 90px auto auto 180px;
+}
+.social {
+  width: 30px;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 90px auto auto 108px;
+  margin-top: 7px;
+}
+.social img {
+  width: 30px;
+  height: 30px;
+  color: #f2f2f2;
+  margin-bottom: 17.5px;
+}
+.potted_img {
+  width: 490px;
+  height: 711px;
+  margin: 7px 0 auto 42px;
+}
+.potted_description {
+  width: 327px;
+  height: 665px;
+  margin: 90px auto auto 120px;
+  flex-direction: column;
+}
+h1 {
+  font-size: 64px;
+  font-weight: normal;
+  color: #f2f2f2;
+  letter-spacing: 7px;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #f2f2f2;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+.potted_description .gallery {
+  width: 326px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #939393;
+  color: #939393;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: 175px;
+  background-color: transparent;
+}
+.arrows {
+  width: 55px;
+  height: 463px;
+  margin: 270px 110px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.chevron {
+  margin-bottom: 383px;
+}
+
+/*POTS_VASES*/
+
+.pots_vases {
+  width: 100%;
+  height: 827px;
+  background-color: #f2f2f2;
+}
+.container_pots {
+  display: flex;
+  padding-left: 80px;
+}
+.container_pots h2 {
+  width: 0.7em;
+  width: 1ch;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: #939393;
+  margin: 90px 0 auto 273px;
+}
+.pots_left {
+  width: 315px;
+  height: 470px;
+  flex-direction: column;
+  margin: 90px 0 63px 30px;
+}
+.pots_right {
+  width: 486px;
+  height: 470px;
+  flex-direction: column;
+  margin: 90px 283px 63px 30px;
+}
+.container_pots p {
+  text-align: center;
+  color: #939393;
+  font-size: 18px;
+  font-weight: normal;
+}
+.pots_left p {
+  padding: 30px 39px 0 39px;
+}
+.pots_right p {
+  padding: 30px 77px 0 77px;
+}
+.pots_vases .gallery {
+  width: 326px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #939393;
+  color: #939393;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  background-color: transparent;
+}
+.pots_vases .arrow {
+  margin: 55px auto auto 90px;
+}
+.gallery_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 484px;
+}
+
+/* GALLERY */
+
+body {
+  background-color: #f2f2f2; /*is this correct??? */
+  scroll-behavior: smooth;
+}
+.gallery_header {
+  height: 310px;
+  width: 100%;
+  background: url(../img/item_title.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.gallery_header .gallery-header-pot {
+  width: 174px;
+  height: 234px;
+  margin: 38px 164px auto;
+  float: right;
+}
+.gallery_title {
+  width: 100%;
+  height: 80px;
+  background-color: #4a4a4a;
+  padding-top: 12px;
+  position: sticky;
+  top: -1px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.gallery_title h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #f2f2f2;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.items_container {
+  margin: 66px 80px auto 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item_card {
+  width: 25%;
+  height: 488px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 66px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.item_card img {
+  width: 298px;
+  height: 385px;
+  align-items: center;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.item_card:hover img {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.name {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: lowercase;
+  margin: 20px auto 0 0;
+  letter-spacing: 3px;
+}
+.price {
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4a4a;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 7px;
+  align-items: flex-start;
+}
+
+/* В .item_card
+display: flex;
+И подбери нужные параметры align-items и justify-content
+А ещё flex-direction: column
+Нужно
+Чтобы вертикально было */
+
+/* MODAL */
+
+.modal {
+  position: absolute;
+  left: 108px;
+  top: 100px;
+  width: 554px;
+  height: 369px;
+  z-index: 1;
+  background: url(../img/menu_bg.png);
+  border: solid 2px #f2f2f2;
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-200px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.modal.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu_header {
+  width: 554px;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.menu_header h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #f2f2f2;
+  font-size: 36px;
+  font-weight: extra-bold;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+  margin: 20px auto auto 90px;
+}
+.menu_header img {
+  height: 30px;
+  width: 30px;
+  margin: 27px 27px auto;
+}
+.menu_body {
+  margin: 40px auto auto 90px;
+}
+.menu_body ul {
+  list-style: none;
+}
+.menu_body li {
+  color: #4a4a4a;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.menu_body li a {
+  color: #4a4a4a;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: color 0.2s ease-in-out, letter-spacing 0.2s ease-in-out;
+}
+.menu_body li:hover a {
+  color: #141212;
+  text-decoration: underline;
+  letter-spacing: 3.2px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #cdcdcd;
+  padding: 20px 164px 20px 164px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer ul {
+  color: #4a4a4a;
+}
+
+.menu_footer ul {
+  list-style: none;
+}
+.menu_footer li {
+  color: #4a4a4a;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.menu_footer li a {
+  color: #4a4a4a;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+.menu_contacts {
+  flex-direction: column;
+}
+
+.menu_contacts ul {
+  list-style: none;
+}
+.menu_contacts li {
+  color: #4a4a4a;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.menu_contacts li a {
+  color: #4a4a4a;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+.menu_contacts {
+  flex-direction: column;
+}
+.social_footer {
+  width: 134px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* оцентровать по гориз
+
+
+
+*/
